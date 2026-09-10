@@ -12,10 +12,12 @@ namespace Solution
     {
         public Inventory inventory;
         private InputAction moveAction;
+        private InputAction fireAction;
         public override void SetUP()
         {
             base.SetUP();
             moveAction = InputSystem.actions.FindAction("Move");
+            fireAction = InputSystem.actions.FindAction("Fire");
             PrintInfo();
             GetRemainEnergy();
             inventory = GetComponent<Inventory>();
@@ -27,6 +29,10 @@ namespace Solution
             {
                 Vector2 direction = moveAction.ReadValue<Vector2>();
                 Move(direction);
+            }
+            if (fireAction.triggered)
+            {
+                UseFireStorm();
             }
         }
         public override void Move(Vector2 direction)
