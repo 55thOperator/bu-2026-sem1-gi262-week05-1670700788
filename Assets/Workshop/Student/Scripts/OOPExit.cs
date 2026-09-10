@@ -13,7 +13,7 @@ namespace Solution
         public int ItemAmountToOpen = 2;
         public override bool Hit()
         {
-            // µ√«® Õ∫«Ë“ºŸÈ‡≈Ëπ¡’‰Õ‡∑Á¡∑’ËµÈÕß°“√À√◊Õ‰¡Ë
+            // ‡∏ï‡∏£‡∏ß‡∏à‡∏™‡∏≠‡∏ö‡∏ß‡πà‡∏≤‡∏ú‡∏π‡πâ‡πÄ‡∏•‡πà‡∏ô‡∏°‡∏µ‡πÑ‡∏≠‡πÄ‡∏ó‡πá‡∏°‡∏ó‡∏µ‡πà‡∏ï‡πâ‡∏≠‡∏á‡∏Å‡∏≤‡∏£‡∏´‡∏£‡∏∑‡∏≠‡πÑ‡∏°‡πà
             bool IsHasItemAmount = mapGenerator.player.inventory.HasItem(ItemToOpen, ItemAmountToOpen);
             if (IsHasItemAmount)
             {
