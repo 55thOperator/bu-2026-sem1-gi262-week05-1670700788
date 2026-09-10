@@ -17,7 +17,7 @@ namespace Solution
         {
             base.SetUP();
             moveAction = InputSystem.actions.FindAction("Move");
-            fireAction = InputSystem.actions.FindAction("Fire");
+            fireAction = InputSystem.actions.FindAction("Attack");
             PrintInfo();
             GetRemainEnergy();
             inventory = GetComponent<Inventory>();
