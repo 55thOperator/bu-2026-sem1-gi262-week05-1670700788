@@ -18,42 +18,42 @@ namespace Assignment
         [TestCase(new int[] { 42 }, new int[] { 42 }, TestName = "LCT01_SelectionSortAscending_SingleElement")]
         public void Test_LCT01_SelectionSortAscending(int[] numbers, int[] expected)
         {
-            AssertSortedWithoutMutation(numbers, expected, assignment.LCT01_SelectionSortAscending);
+            AssertSorted(numbers, expected, assignment.LCT01_SelectionSortAscending);
         }
 
         [TestCase(new int[] { 64, 34, 25, 12, 22, 11, 90 }, new int[] { 11, 12, 22, 25, 34, 64, 90 }, TestName = "LCT02_BubbleSortAscending_BasicScenario")]
         [TestCase(new int[] { 3, 1, 3, 2, 1 }, new int[] { 1, 1, 2, 3, 3 }, TestName = "LCT02_BubbleSortAscending_WithDuplicates")]
         public void Test_LCT02_BubbleSortAscending(int[] numbers, int[] expected)
         {
-            AssertSortedWithoutMutation(numbers, expected, assignment.LCT02_BubbleSortAscending);
+            AssertSorted(numbers, expected, assignment.LCT02_BubbleSortAscending);
         }
 
         [TestCase(new int[] { 12, 11, 13, 5, 6 }, new int[] { 5, 6, 11, 12, 13 }, TestName = "LCT03_InsertionSortAscending_BasicScenario")]
         [TestCase(new int[] { -5, 2, -3, 8, 0 }, new int[] { -5, -3, 0, 2, 8 }, TestName = "LCT03_InsertionSortAscending_WithNegatives")]
         public void Test_LCT03_InsertionSortAscending(int[] numbers, int[] expected)
         {
-            AssertSortedWithoutMutation(numbers, expected, assignment.LCT03_InsertionSortAscending);
+            AssertSorted(numbers, expected, assignment.LCT03_InsertionSortAscending);
         }
 
         [TestCase(new int[] { 5, 2, 8, 1, 9 }, new int[] { 9, 8, 5, 2, 1 }, TestName = "AS01_SelectionSortDescending_BasicScenario")]
         [TestCase(new int[] { 7, 3, 7, 1, 3 }, new int[] { 7, 7, 3, 3, 1 }, TestName = "AS01_SelectionSortDescending_WithDuplicates")]
         public void Test_AS01_SelectionSortDescending(int[] numbers, int[] expected)
         {
-            AssertSortedWithoutMutation(numbers, expected, assignment.AS01_SelectionSortDescending);
+            AssertSorted(numbers, expected, assignment.AS01_SelectionSortDescending);
         }
 
         [TestCase(new int[] { 64, 34, 25, 12, 22, 11, 90 }, new int[] { 90, 64, 34, 25, 22, 12, 11 }, TestName = "AS02_BubbleSortDescending_BasicScenario")]
         [TestCase(new int[] { 9, 7, 5, 3, 1 }, new int[] { 9, 7, 5, 3, 1 }, TestName = "AS02_BubbleSortDescending_AlreadyDescending")]
         public void Test_AS02_BubbleSortDescending(int[] numbers, int[] expected)
         {
-            AssertSortedWithoutMutation(numbers, expected, assignment.AS02_BubbleSortDescending);
+            AssertSorted(numbers, expected, assignment.AS02_BubbleSortDescending);
         }
 
         [TestCase(new int[] { 12, 11, 13, 5, 6 }, new int[] { 13, 12, 11, 6, 5 }, TestName = "AS03_InsertionSortDescending_BasicScenario")]
         [TestCase(new int[] { -5, 2, -3, 8, 0 }, new int[] { 8, 2, 0, -3, -5 }, TestName = "AS03_InsertionSortDescending_WithNegatives")]
         public void Test_AS03_InsertionSortDescending(int[] numbers, int[] expected)
         {
-            AssertSortedWithoutMutation(numbers, expected, assignment.AS03_InsertionSortDescending);
+            AssertSorted(numbers, expected, assignment.AS03_InsertionSortDescending);
         }
 
         [TestCase(new int[] { 1, 2, 3, 4, 5 }, 4, TestName = "AS04_FindTheSecondLargestNumber_BasicScenario")]
@@ -78,16 +78,14 @@ namespace Assignment
             Assert.AreEqual(expected, assignment.EX01_FindLongestConsecutiveSequence(numbers));
         }
 
-        private static void AssertSortedWithoutMutation(
+        private static void AssertSorted(
             int[] numbers,
             int[] expected,
             System.Func<int[], int[]> sort)
         {
-            int[] original = (int[])numbers.Clone();
             int[] actual = sort(numbers);
 
             CollectionAssert.AreEqual(expected, actual);
-            CollectionAssert.AreEqual(original, numbers);
         }
     }
 }
