@@ -11,19 +11,19 @@ namespace Assignment
         /// เรียงลำดับตัวเลขจากน้อยไปมากโดยใช้ Selection Sort
         /// </summary>
         /// <param name="numbers"></param>
-        public void LCT01_SelectionSortAscending(int[] numbers);
+        public int[] LCT01_SelectionSortAscending(int[] numbers);
 
         /// <summary>
         /// เรียงลำดับตัวเลขจากน้อยไปมากโดยใช้ Bubble Sort
         /// </summary>
         /// <param name="numbers"></param>
-        public void LCT02_BubbleSortAscending(int[] numbers);
+        public int[] LCT02_BubbleSortAscending(int[] numbers);
 
         /// <summary>
         /// เรียงลำดับตัวเลขจากน้อยไปมากโดยใช้ Insertion Sort
         /// </summary>
         /// <param name="numbers"></param>
-        public void LCT03_InsertionSortAscending(int[] numbers);
+        public int[] LCT03_InsertionSortAscending(int[] numbers);
 
         #endregion
 
@@ -33,19 +33,19 @@ namespace Assignment
         /// เรียงลำดับตัวเลขจากมากไปน้อยโดยใช้ Selection Sort
         /// </summary>
         /// <param name="numbers"></param>
-        public void AS01_SelectionSortDescending(int[] numbers);
+        public int[] AS01_SelectionSortDescending(int[] numbers);
 
         /// <summary>
         /// เรียงลำดับตัวเลขจากมากไปน้อยโดยใช้ Bubble Sort
         /// </summary>
         /// <param name="numbers"></param>
-        public void AS02_BubbleSortDescending(int[] numbers);
+        public int[] AS02_BubbleSortDescending(int[] numbers);
 
         /// <summary>
         /// เรียงลำดับตัวเลขจากมากไปน้อยโดยใช้ Insertion Sort
         /// </summary>
         /// <param name="numbers"></param>
-        public void AS03_InsertionSortDescending(int[] numbers);
+        public int[] AS03_InsertionSortDescending(int[] numbers);
 
         /// <summary>
         /// ค้นหาตัวเลขที่มีค่ามากเป็นอันดับสองใน array
@@ -53,7 +53,7 @@ namespace Assignment
         /// เช่น input ที่ได้รับมาคือ[1 2 3 4 5] ตัวเลขที่มีค่ามากเป็นอันดับสองคือ 4
         /// </summary>
         /// <param name="numbers"></param>
-        public void AS04_FindTheSecondLargestNumber(int[] numbers);
+        public int AS04_FindTheSecondLargestNumber(int[] numbers);
 
         #endregion
 
@@ -71,7 +71,7 @@ namespace Assignment
         /// ดังนั้นเราสามารถบอกได้ว่าชุดตัวเลขนี้[1 9 3 10 4 20 2] มี longest consecutive sequence ความยาวเท่ากับ 4
         /// </summary>
         /// <param name="numbers"></param>
-        public void EX01_FindLongestConsecutiveSequence(int[] numbers);
+        public int EX01_FindLongestConsecutiveSequence(int[] numbers);
 
         #endregion 
     }

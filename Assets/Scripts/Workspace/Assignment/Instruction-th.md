@@ -32,6 +32,8 @@ Sorting Algorithm คือขั้นตอนการจัดเรีย�
 
 ## Lecture Methods
 
+The sorting methods return a new sorted array and do not modify the input array.
+
 Methods เหล่านี้แสดงแนวคิด Sorting Algorithms พื้นฐาน Implement เพื่อฝึกหัดแต่จะไม่มีการให้คะแนน
 
 ### 1. LCT01_SelectionSortAscending
@@ -47,7 +49,7 @@ Methods เหล่านี้แสดงแนวคิด Sorting Algorithm
 
 **Method Signature:**
 ```csharp
-void LCT01_SelectionSortAscending(int[] numbers)
+int[] LCT01_SelectionSortAscending(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -104,7 +106,7 @@ void LCT01_SelectionSortAscending(int[] numbers)
 
 **Method Signature:**
 ```csharp
-void LCT02_BubbleSortAscending(int[] numbers)
+int[] LCT02_BubbleSortAscending(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -148,7 +150,7 @@ void LCT02_BubbleSortAscending(int[] numbers)
 
 **Method Signature:**
 ```csharp
-void LCT03_InsertionSortAscending(int[] numbers)
+int[] LCT03_InsertionSortAscending(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -192,7 +194,7 @@ Methods เหล่านี้เป็นการประยุกต์ใ
 
 **Method Signature:**
 ```csharp
-void AS01_SelectionSortDescending(int[] numbers)
+int[] AS01_SelectionSortDescending(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -229,7 +231,7 @@ void AS01_SelectionSortDescending(int[] numbers)
 
 **Method Signature:**
 ```csharp
-void AS02_BubbleSortDescending(int[] numbers)
+int[] AS02_BubbleSortDescending(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -268,7 +270,7 @@ void AS02_BubbleSortDescending(int[] numbers)
 
 **Method Signature:**
 ```csharp
-void AS03_InsertionSortDescending(int[] numbers)
+int[] AS03_InsertionSortDescending(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -299,13 +301,15 @@ void AS03_InsertionSortDescending(int[] numbers)
 
 ### AS04_FindTheSecondLargestNumber
 
+This method returns the second-largest distinct number as an `int`.
+
 **วัตถุประสงค์:** หาตัวเลขที่มีค่ามากเป็นอันดับสองใน array
 
 **ตัวอย่างการใช้งานในเกม:** หาผู้เล่นที่ได้คะแนนสูงเป็นอันดับ 2, หาอาวุธที่แรงเป็นอันดับ 2, หา HP สูงสุดอันดับ 2
 
 **Method Signature:**
 ```csharp
-void AS04_FindTheSecondLargestNumber(int[] numbers)
+int AS04_FindTheSecondLargestNumber(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
@@ -335,6 +339,8 @@ void AS04_FindTheSecondLargestNumber(int[] numbers)
 
 ### EX01_FindLongestConsecutiveSequence
 
+This method returns the length of the longest consecutive sequence as an `int`.
+
 **วัตถุประสงค์:** หาความยาวของชุดตัวเลขที่เรียงลำดับติดต่อกันที่ยาวที่สุด
 
 **ตัวอย่างการใช้งานในเกม:** 
@@ -349,7 +355,7 @@ void AS04_FindTheSecondLargestNumber(int[] numbers)
 
 **Method Signature:**
 ```csharp
-void EX01_FindLongestConsecutiveSequence(int[] numbers)
+int EX01_FindLongestConsecutiveSequence(int[] numbers)
 ```
 
 **Logic ที่ต้อง implement:**
